@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+
+int a[4],count=0,i;
+
+for(i=0;i<4;i++)
+
+{
+
+    scanf("%d",&a[i]);
+
+}
+
+for(i=0;i<4;i++)
+
+{
+
+    if(a[i]>=10)
+
+    count++;
+
+}
+
+printf("%d",count);
+
+	return 0;
+  }
