@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+	int i,j,n,a[20],flag;printf("enter no of numbers:");
+
+scanf("%d",&n);
+
+printf("enter numbers:");
+
+for(i=0;i<n;i++)
+
+scanf("%d",&a[i]);
+
+printf("primes numbers are ");
+
+for(i=0;i<n;i++)
+
+{
+
+  flag=0;
+
+  for(j=2;j<a[i];j++)
+
+  {
+
+    if(a[i]%j==0)
+
+    {
+
+    flag=1;
+
+    break;
+
+    }
+
+  }
+
+  if(flag==0)
+
+  printf("%d\t",a[i]);
+
+}
+
+}
