@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+	char a[30];
+	int i,j,upcoun=0,lowcount=0,digcount=0,n=0;
+	scanf("%s",a);
+	for(i=0;a[i]!='\0';i++)
+	n++;
+	for(i=0;i<n;i++)
+	{
+		if(isupper(a[i]))
+		upcoun++;
+		else if(islower(a[i]))
+		lowcount++;
+		else if(isdigit(a[i]))
+		digcount++;
+	}
+	printf("uppercase letter count is %d\n",upcoun);
+	printf("lowercase letter count is %d\n",lowcount);
+	printf(" no of digits is %d",digcount);
+}
