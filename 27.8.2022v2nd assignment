@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char a[30];
+int i,j,k,n;
+gets(a);
+n=strlen(a);
+for(i=1;i<=n;i++)
+for(j=0;j<=n-i;j++)
+{
+  for (k=j;k<i+j;k++)
+  printf("%3c",a[k]);
+  printf("\n");
+}
+}
