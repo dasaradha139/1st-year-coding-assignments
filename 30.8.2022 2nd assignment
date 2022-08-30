@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char a[30];
+	int i,len;
+	gets(a);
+	len=strlen(a);
+	for(i=0;i<len;i++)
+	if(a[i]=='a')
+	a[i]='A';
+	puts(a);
+}
