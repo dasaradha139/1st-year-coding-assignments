@@ -1,14 +1,14 @@
 #include<stdio.h>
-void factorial_without_return(int n)
-{
-  int fact=1;
-	while(n>0)
-	{
-		fact*=n;
-		n--;
-	}
-	printf("factorial is %d",n,fact);
-}
+
+
+
+
+	
+
+
+	
+
+
 int factorial_with_return(int n)
 {
 	int fact=1;
@@ -24,9 +24,9 @@ void main()
 {
 	int n,result;
 	scanf("%d",&n);
-	printf("without return value:");
-	factorial_without_return(n);
-	printf("\nwith return value:");
+
+
+
 	result=factorial_with_return(n);
 	printf("factorial is %d",result);
 }
