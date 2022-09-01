@@ -1,0 +1,29 @@
+#include<stdio.h>
+void even_odd_without_return(int n)
+{
+  	if(n%2==0)
+  	printf("even");
+  	else
+  	printf("odd");
+}
+int even_odd_with_return(int n)
+{
+	if(n%2==0)
+  	return 1;
+  	else
+  	return 0;
+}
+
+void main()
+{
+	int n,result;
+	scanf("%d",&n);
+	printf("without return value:");
+	even_odd_without_return(n);
+	printf("\nwith return value:");
+	result=even_odd_with_return(n);
+	if(result==1)
+  	printf("even");
+  	else
+  	printf("odd");
+}
