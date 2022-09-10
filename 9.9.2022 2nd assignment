@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node{
+	int n;
+	struct node *link;
+};
+struct node *head;
+struct node *new_node()
+{
+	struct node *ptr;
+	ptr=(struct node *)malloc(sizeof(struct node));
+    scanf("%d",&(ptr->n));
+    ptr->link=NULL;
+    return ptr;
+}
+void search(int x)
+{
+   int flag=0;
+  struct node *ptr;
+  ptr=head;
+  while(ptr!=NULL)
+  {
+    if(ptr->n==x)
+    {
+      flag=1;
+      break;
+    }
+    ptr=ptr->link;
+  }
+  if(flag==1)
+  printf("found");
+  else
+  printf("not found");
+}
+void main()
+{
+	head=malloc(sizeof(struct node));
+	head->n=10;
+	head->link=new_node();
+	head->link->link=new_node();
+ int x;
+ scanf("%d",&x);
+	search(x);
+}
